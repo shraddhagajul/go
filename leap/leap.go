@@ -1,7 +1,7 @@
 package leap
 
-// IsLeapYear should have a comment documenting it.
+// IsLeapYear: Given a year, reports if it is a leap year.
 func IsLeapYear(year int) bool {
 
-	return  year % 4 == 0 && ( year % 100 == 0 || year % 400 == 0 ) 
+	return year%4 == 0 && (year%100 != 0 || year%400 == 0)
 }
